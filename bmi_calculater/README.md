@@ -47,18 +47,6 @@ https://github.com/Nadeennoshy/TEKNOSOFT/assets/70576667/f020f1ea-93f3-4d53-9c86
 ## 🛠 Dependencies
 
 ```pubspec.yaml
-  date_picker_timeline: 
-  flutter_bloc: 
-  flutter_screenutil: 
-  fluttertoast: 
-  get_it: 
-  google_fonts: 
-  intl: 
-  shared_preferences: 
-  smooth_page_indicator: 
-  sqflite: 
-  flutter_local_notifications: 
-  timezone: 
-  flutter_timezone: 
-  workmanager: 
+  cupertino_icons
+  numberpicker
 ```

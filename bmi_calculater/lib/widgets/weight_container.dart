@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 class WeightContainer extends StatelessWidget {
-  const WeightContainer({super.key,required this.onChange,required this.weight});
+  const WeightContainer(
+      {super.key, required this.onChange, required this.weight});
   final Function(int) onChange;
   final int weight;
   @override
@@ -26,14 +27,14 @@ class WeightContainer extends StatelessWidget {
             color: Colors.blue,
           ),
           NumberPicker(
-              itemWidth: 50,
-              itemHeight: 40,
-              axis: Axis.horizontal,
-              minValue: 3,
-              maxValue: 200,
-              value: weight,
-              onChanged: onChange,
-              ),
+            itemWidth: 50,
+            itemHeight: 40,
+            axis: Axis.horizontal,
+            minValue: 3,
+            maxValue: 200,
+            value: weight,
+            onChanged: onChange,
+          ),
         ],
       ),
     );

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AgeContainer extends StatelessWidget {
-  const AgeContainer({super.key, required this.age,required this.ageIncrement,required this.ageDecrement});
+  const AgeContainer(
+      {super.key,
+      required this.age,
+      required this.ageIncrement,
+      required this.ageDecrement});
   final int age;
   final Function() ageIncrement;
   final Function() ageDecrement;

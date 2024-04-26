@@ -15,23 +15,37 @@ class GenderPart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
       children: [
-        GenderContainer(
-          genderIcon: Icons.man,
-          genderType: 'Male',
-          onTap: maleOnTap,
-          isSelected: selectedMale,
+        const Text(
+          'Gender',
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         const SizedBox(
-          width: 15,
+          height: 15,
         ),
-        GenderContainer(
-          genderIcon: Icons.woman,
-          genderType: 'Female',
-          onTap: femaleOnTap,
-          isSelected: selectedFemale,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            GenderContainer(
+              genderIcon: Icons.man,
+              genderType: 'Male',
+              onTap: maleOnTap,
+              isSelected: selectedMale,
+            ),
+            const SizedBox(
+              width: 15,
+            ),
+            GenderContainer(
+              genderIcon: Icons.woman,
+              genderType: 'Female',
+              onTap: femaleOnTap,
+              isSelected: selectedFemale,
+            ),
+          ],
         ),
       ],
     );

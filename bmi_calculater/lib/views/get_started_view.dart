@@ -13,24 +13,32 @@ class GetStartedView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/start.png',),
-            const Text('Welcome to BMI',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 26,
+            Image.asset(
+              'assets/images/start.png',
             ),
+            const Text(
+              'Welcome to BMI',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 26,
+              ),
             ),
             const Text('Best guide for Calculating'),
             const Text('your body mass index'),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             CustomButton(
-              onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context){
-                  return const HomeView();
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return const HomeView();
+                      },
+                    ),
+                  );
                 },
-                ),
-                );
-            }, buttonText: 'Get Started'),
+                buttonText: 'Get Started'),
           ],
         ),
       ),

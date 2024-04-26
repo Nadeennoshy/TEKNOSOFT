@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 class HeightContainer extends StatelessWidget {
-  const HeightContainer({super.key,required this.minValue,required this.maxValue,required this.value,required this.onChange});
+  const HeightContainer(
+      {super.key,
+      required this.minValue,
+      required this.maxValue,
+      required this.value,
+      required this.onChange});
   final int minValue;
   final int maxValue;
   final int value;
@@ -13,22 +18,25 @@ class HeightContainer extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: Colors.grey,
-          )
-        ),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: Colors.grey,
+            )),
         child: Column(
           children: [
             NumberPicker(
-              axis: Axis.horizontal,
-              itemHeight: 40,
-              itemWidth: 46,
-              itemCount: 7,
-              minValue: minValue, maxValue: maxValue, value: value, onChanged: onChange
-              ),
-              const SizedBox(height: 20,),
+                axis: Axis.horizontal,
+                itemHeight: 40,
+                itemWidth: 46,
+                itemCount: 7,
+                minValue: minValue,
+                maxValue: maxValue,
+                value: value,
+                onChanged: onChange),
+            const SizedBox(
+              height: 20,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: List.generate(
@@ -40,9 +48,10 @@ class HeightContainer extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
           ],
-          
         ),
       ),
     );
